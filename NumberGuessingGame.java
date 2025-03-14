@@ -25,23 +25,19 @@ public class NumberGuessingGame
 				int number=scanner.nextInt();
 				if(number>randomNumber)
 				{
-					if(attempts>0) {
 						Thread.sleep(2000);
 						System.out.println("you are too close! but your number is greater then my number");
 						attempts--;
 						Thread.sleep(2000);
 						System.out.println("you have "+attempts+" attempts!");
-					}
 				}
 				else if(number<randomNumber)
 				{
-					if(attempts>0) {
 						Thread.sleep(2000);
 						System.out.println("you are too close! but your number is less then my number");
 						attempts--;
 						Thread.sleep(2000);
 						System.out.println("you have "+attempts+" attempts!");
-					}
 				}
 				else
 				{
@@ -57,7 +53,7 @@ public class NumberGuessingGame
 				
 			}
 			Thread.sleep(3000);
-			System.out.println("the correct answer is "+randomNumber);
+				System.out.println("the correct answer is "+randomNumber);
 			scanner.close();
 		}
 	}
